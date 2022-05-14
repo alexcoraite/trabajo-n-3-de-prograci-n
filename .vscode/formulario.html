@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <p>respuestas del cuestionaro</p>
+    <p>1). Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas (datos tabulados). Una tabla permite buscar con rapidez y facilidad valores entre diferentes tipos de datos que indiquen algún tipo de conexión. Por ejemplo, una persona y su edad, o un día de la semana o el horario de una piscina municipal.</p>
+    <p>2). table: contenedor principal</p>
+    <p>tr: fila contenedora</p>
+    <p>td: celda (dividen la columna) </p>
+    <p>th: encabezado de fila o columna</p>
+    <p>3). Un formulario es un elemento en HTML por que es lo que nos permite introducir datos y por ello también interactuar con la web y su base de datos.Los formularios en HTML sirven al propósito de recolectar información proporcionada por los visitantes del sitio, la cual es luego enviada nuevamente al servidor.</p>
+     <p>4). button: no lleva ninguna opcion
+            input: uno de los muchos controles de acuerdo al valor del atributo
+            text: control usado para la entrada de un asola linea de texto
+            tele: se pueden ingresar caracteres nemuricos y no numericos
+            email: disenado para insertar direccion de email válidos
+            password: caja de texto para inresar conasas donde los caracteres son representados por puntos
+            date: control que sirve para ingresar  desde calendario predeterminado
+            checkbox: cotrol de tipo cuadrado que permite ingresar un valor booleano(v o f)
+            radio: control para elegir una única opcion entre varias
+            date time: control pra ingresar fecha y hora especifica 
+            file: control para subir archivos
+            number: control para ingresar solo números 
+            range: control para ingresar o seleccionar un valor dentro de un determinado rango 
+        </p>
+  <form method="get" >
+      <fieldset>
+                <legend>DATOS DEL PROPIETARIO</legend>
+          
+                nombre:<input type="text" name="nombre del prop." placeholder="nombre"/></br>
+                apellido:<input type="text" name="apellido del prop." placeholder="apellido"/></br>
+                fecha de nacimiento:<input type="date" name="fecha" value="fecha de nacimiento" /><br>
+                numero de documento:<input type="number" name="numero de documento"  placeholder="DNI" /></br>
+                dirección de email:<input type="email" name="dir. de email"  placeholder="email"/></br>
+                número de teléfono:<input type="number" name="num. de tel." value="teléfono" /></br>
+    </fieldset>
+     <fieldset>
+              <legend>DATOS DEL VEHÍCULO</legend>
+                número del patente:<input type="text"><br>
+                marca:
+                  <select name="marca" >
+                    <OPTION VALUE="Volkswagen">Volkswagen</OPTION>
+                    <OPTION VALUE="Toyota">Toyota</OPTION>
+                    <OPTION VALUE="Renault">Renault</OPTION>
+                    <OPTION VALUE="Nissan">Nissan</OPTION>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Ford">ford</option>
+                    <option value="Stellantis">Stellantis</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <OPTION VALUE="otro">Otro<input type="text"></OPTION>
+                  </select>
+                velocidad maxima:<input type="number" name="velocidad maxima">Km/h.<sbr>
+    </fieldset>
+    <legend>comentarios</legend>
+              <textarea name="comntarios" id="" cols="40" rows="10">introduce tus comentarios aquí</textarea>
+     </fieldset>
+     <p><button type="submit" name="enviar">ENVIAR</button></p>
+    </form>
+</body>
+</html>
